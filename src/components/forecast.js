@@ -7,7 +7,7 @@ const Forecast = (props) =>{
             {props.country && props.city && <p>location: {props.city},{props.country}</p>}
             {props.temperature && <p>Temperature: <b><span>{Math.round(5+(props.temperature-32)*0.55)}&deg;C</span></b></p>}
             {props.icon && <img src={`https://openweathermap.org/img/w/${props.icon}.png`} alt="weather icon"/>}
-            {props.description && <p>condition: <b>{props.description}</b></p>}
+            {props.description && <p><b>{props.description}</b></p>}
             <div className='box'>
 
             <div className='humidity'>
